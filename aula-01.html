@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+
+    <script type="text/javascript">
+        function soma(p1, p2) {
+            return p1+p2;
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem, ipsum dolor.</h2>
+    <h3>Lorem ipsum dolor sit.</h3>
+
+    <p>Primeiro Paragrafo</p>
+    <img src="https://th.bing.com/th/id/R.2670b448f3473a80c8899e7e478b930c?rik=XuZO7qNtFT%2bvgg&riu=http%3a%2f%2fimages7.memedroid.com%2fimages%2fUPLOADED322%2f634084e6e7085.jpeg&ehk=v7BNv0Kkvyqd9vt9CZnqBQFhU27izplZuiiAIX91FZ4%3d&risl=&pid=ImgRaw&r=0" alt="Cachorro Engraçado" height="300px" title="cachorro :)">
+
+
+    <a href="https://www.uft.edu.br" target="_blank" rel="noopener noreferrer"></a>
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h2>Lista não ordenada</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <table border="1">
+        <tr>
+            <td>Mária Claudia</td>
+            <td>Felipe Marcante</td>  
+        </tr>
+        <tr>    
+            <td>Maria Fernanda</td>
+            <td>André Felipe</td>
+        </tr>
+        <tr>
+            <td>Mária Amélia</td>
+            <td>Victor Lima</td>
+        </tr>
+    </table>
+
+    <form action="/cadastro/" method="post">
+        <label for="username">Nome de Usuário</label><slot></slot>
+        <input type="text" name="username" placeholder="Digite seu nome de usuário">
+        <input type="password" name="pass" id="password" placeholder="Digite sua Senha">
+        <input type="submit" value="">
+
+        <div>
+            <input type="radio" name="sexo" value="1" checked> Masculino
+            <input type="radio" name="sexo" value="2"> Feminino
+        </div>
+        <div>
+            <input type="checkbox" name="carro1" id=""> Carro 1
+            <input type="checkbox" name="carro2" id=""> Carro 2
+        </div>
+        <div><select name="" id="">
+            <option value="" selected>Selecione um curso</option>
+            <option value="">Ciência da Computação</option>
+            <option value="">Engenharia Civil</option>
+            <option value="">Arquitetura e Urbanismp</option>
+            <option value="">Licenciatura em Teatro</option>
+
+        </select></div>
+    </form>
+</body>
+</html>
